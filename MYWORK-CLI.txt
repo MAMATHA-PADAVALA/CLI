@@ -1,0 +1,100 @@
+pwd-Present working directory
+
+ls-list all the files within the directory
+
+ls-a —->list includes the private files
+
+ls -l —-->displays the permissions ,user and file forums,size and date
+
+ls -la —-->displays the long forums of private files also
+
+.. —->parent directory
+
+ls dir_name —--->lists all the files in the specified directory
+
+cd relative path
+
+cd ../.. —->navigate back to grand parent directory
+
+cd —--->navigate to home directory
+
+cd ~ —------>navigate to home directory
+
+mkdir —-->create a directory
+
+touch filename —->creates an empty file
+
+open filename —---> opens the file
+
+cp oldfile newfile —--->copies contents of old file to new file
+
+mv oldname newname —---> renames the file
+
+mv file newpath —----> moves the file to newpath
+
+mv file ..\newname —---> moves the file to the parent directory with new name
+
+rm filename —-->deletes file
+
+cp -r olddirectory newdirectory —--->copies contents of old directory to new directory
+
+mv olddirname newdirname —----> renames olddirname to newdirname
+
+mv dir\ dir1\ —---> moves entire dir\ to dir1\
+
+rm -r dirname —---> deletes the directory
+
+find . —---> gives all files ,directories and subdirectories
+
+find . -type f —--->lists all files in directories 
+
+find . -type d —--->lists all directories 
+
+find . -type f -name “test_1.txt” —--> gives the path where the file with name test_1.txt exists
+
+find . -type f -name “test*” —--->when the file name starts with test and can’t remember the file 
+
+name.This lists all the files that start with test.
+
+find . -type f -mmin -10 —---> lists all the files that were modified less than 10 minutes ago
+
+find . -type f -mmin +10 —--->lists all the files that were modified more than 10 minutes ago
+
+find . -type f -mmin +1 -mmin -5 —--->lists all the files that are modified more than 1 minue ago and less that 5 minutes ago
+
+find . -type f -mtime -20 —--->lists all the files that were modified less than 20 days ago
+
+amin - for access minutes
+atime - for access days
+cmin - for change minutes
+ctime - for change days
+
+find . -size +5M —---> lists all files of size more than 5MB
+
+find . -empty —---> lists all empty files
+
+find . -perm 777 —---> finds all files and directories with permission 777
+
+1-grep “John Williams” filename.txt—--->checks whether if text is present in file,if not present , it wil not return anything.if present, it will return entire word.
+
+2-grep -w “John Williams” filename.txt —---> does not return the entire word,return only exact match.
+
+Ex:
+Colors.txt has two lines
+John Williams
+John Williamson
+
+1 returns both but 2 returns only John Williams
+
+grep -wi “John Williams” colors.txt —--->ignores case
+
+grep -win “John Williams” colors.txt —--->ignores case and gives line numbers also
+
+grep -winr  “John Williams” . —---> searches in all files
+
+grep -wirl  “John Williams” . —--->  lists all files that contains Jon Williams
+
+grep -wirc  “John Williams” . —--->  lists all files that contains Jon Williams and count of occurrences.
+
+
+history —---> gives all the commands that we ran before
